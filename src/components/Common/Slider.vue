@@ -6,7 +6,8 @@
       i.fa.fa-chevron-left
     ul.slider.is-set(ref="carousel")
       li.slider__seat(v-for="(slide, index) in slides" v-bind:id="`slider__seat-${index}`" v-bind:class="{ 'is-ref': index === slides.length - 1 }" ref="seat")
-        img(v-bind:src="slide.image.src" v-bind:alt="slide.image.alt")
+        img.slider__seat-image-large(v-bind:src="slide.imageLarge.src" v-bind:alt="slide.imageLarge.alt")
+        img.slider__seat-image-small(v-bind:src="slide.imageSmall.src" v-bind:alt="slide.imageSmall.alt")
 </template>
 
 <script>
@@ -87,9 +88,39 @@ export default {
   data() {
     return {
       slides: [
-        { image: { src: require('../../assets/slide1.jpg'), alt: 'slide 1' }, info: 'Some image info' },
-        { image: { src: require('../../assets/slide2.jpg'), alt: 'slide 2' }, info: 'Some image info' },
-        { image: { src: require('../../assets/slide3.jpg'), alt: 'slide 2' }, info: 'Some image info' },
+        {
+          imageLarge: {
+            src: require('../../assets/slide1.jpg'),
+            alt: 'slide 1'
+          },
+          imageSmall: {
+            src: require('../../assets/slide1_small.jpg'),
+            alt: 'slide 1'
+          },
+          info: 'Some image info',
+        },
+        {
+          imageLarge: {
+            src: require('../../assets/slide2.jpg'),
+            alt: 'slide 2'
+          },
+          imageSmall: {
+            src: require('../../assets/slide2_small.jpg'),
+            alt: 'slide 2'
+          },
+          info: 'Some image info',
+        },
+        {
+          imageLarge: {
+            src: require('../../assets/slide3.jpg'),
+            alt: 'slide 3'
+          },
+          imageSmall: {
+            src: require('../../assets/slide3_small.jpg'),
+            alt: 'slide 3'
+          },
+          info: 'Some image info',
+        },
       ],
     };
   },
@@ -111,8 +142,9 @@ export default {
   .slider-container
     overflow hidden
     position relative
+    margin 0.5rem 0
     +phone-only()
-      height 400px
+      height 300px
     +tablet-up()
       height 500px
   .slider-next
@@ -146,6 +178,18 @@ export default {
       order 2
       img
         max-width 100%
+      &-image-large
+        +phone-only()
+          display none
+        +tablet-up()
+          display block
+          height 100%
+      &-image-small
+        +phone-only()
+          display block
+          height 100%
+        +tablet-up()
+          display none
     &__seat.is-ref
       order 1
 

@@ -37,13 +37,15 @@ export default {
 </script>
 
 <style lang="stylus">
+  @import '../../styles/_variables.styl'
   .nav-overlay
     margin 0
     padding 0
     position absolute
     top 80px
     transition max-height 0.25s ease
-    background-color rgba(0,0,0,0.7)
+    background-color color-primary
+    opacity 0.8
     overflow-y hidden
     max-height 0
     z-index 100

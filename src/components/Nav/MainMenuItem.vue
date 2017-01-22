@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style lang="stylus">
+  @import '../../styles/_variables.styl'
   .nav__menu-item
     display flex
     flex-direction column
@@ -45,7 +46,7 @@ export default {
     cursor pointer
     .nav__menu-link
       letter-spacing 2px
-      color #333
+      color color-primary
     .nav__menu-link:hover
       text-decoration underline
   .nav__menu-item:hover

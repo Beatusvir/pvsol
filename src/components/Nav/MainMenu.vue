@@ -3,7 +3,7 @@
     div.nav__logo
       router-link(to="/")
         img(src="../../assets/pvsol.png")
-    button.nav__toggle(@click="showMobileOverlay = !showMobileOverlay" v-show="!showMobileOverlay")
+    button.nav__toggle(@click="showMobileOverlay = !showMobileOverlay")
       i.fa.fa-bars
     ul.nav__menu
       main-menu-item(v-bind:item="item" v-for="(item, index) in items" v-bind:alternative="items.length - 1 === index")
@@ -64,12 +64,14 @@ export default {
 
 <style lang="stylus">
 @import '../../styles/_breakpoints.styl'
+@import '../../styles/_variables.styl'
 .nav
   position relative
   top 0
   width 100%
   background-color #FAFAFA
   display flex
+  margin-bottom 0.5rem
   justify-content space-between
   +phone-only()
     height 50px
@@ -97,7 +99,7 @@ export default {
       height 100%
   &__toggle
     +phone-only()
-      color white
+      color color-primary
       font-size 2rem
       margin-right 0.25rem
     +tablet-up()
