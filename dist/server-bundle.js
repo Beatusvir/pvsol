@@ -1468,17 +1468,17 @@ module.exports = __vue_exports__
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "sample-site"
+  }, [_c('div', {
+    staticClass: "content"
   }, [_c('slider', {
     attrs: {
       "auto": true
     }
-  }), _c('div', {
-    staticClass: "content"
-  }, [_vm._m(0), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _c('div', {
+  }), _vm._m(0), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _c('div', {
     staticClass: "section container"
   }, [_c('h1', {
     staticClass: "element"
-  }, [_vm._v("Product grid sample")]), _c('products-grid')], 1)]), _vm._m(6)], 1)
+  }, [_vm._v("Product grid sample")]), _c('products-grid')], 1)], 1), _vm._m(6)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "info container"
