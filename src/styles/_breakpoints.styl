@@ -1,0 +1,32 @@
+phoneMax = 599px
+tabletMin = 600px
+tabletMax = 1024px
+desktopMin = 1025px
+
+phone-only()
+  @media screen and (max-width: phoneMax)
+    {block}
+
+tablet-only()
+  @media screen and (min-width: tabletMin) and (max-width: tabletMax)
+    {block}
+
+tablet-up()
+  @media screen and (min-width: tabletMin)
+    {block}
+
+desktop-up()
+  @media screen and (min-width: desktopMin)
+    {block}
+
+screen(minWidth, maxWidth)
+  @media screen and (min-width: minWidth) and (max-width: maxWidth)
+    {block}
+
+max-screen(maxWidth)
+  @media screen and (max-width: maxWidth)
+    {block}
+
+min-screen(minWidth)
+  @media screen and (min-width: minWidth)
+    {block}
