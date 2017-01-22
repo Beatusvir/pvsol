@@ -89,6 +89,7 @@ export default {
       slides: [
         { image: { src: require('../../assets/slide1.jpg'), alt: 'slide 1' }, info: 'Some image info' },
         { image: { src: require('../../assets/slide2.jpg'), alt: 'slide 2' }, info: 'Some image info' },
+        { image: { src: require('../../assets/slide3.jpg'), alt: 'slide 2' }, info: 'Some image info' },
       ],
     };
   },
