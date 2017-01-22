@@ -46,6 +46,7 @@ export default {
     background-color rgba(0,0,0,0.7)
     overflow-y hidden
     max-height 0
+    z-index 100
     &__item
       color white
       padding 1rem
