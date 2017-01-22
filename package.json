@@ -2,6 +2,7 @@
   "name": "pvsol",
   "description": "PVSOL Venezuela home page",
   "author": "Carlos Pirela <pirela_carlos@hotmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "node server",
     "start": "cross-env NODE_ENV=production node server",
