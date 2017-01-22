@@ -113,7 +113,7 @@ export default {
     +phone-only()
       height 400px
     +tablet-up()
-      height 700px
+      height 500px
   .slider-next
   .slider-previous
     position absolute
@@ -144,7 +144,7 @@ export default {
       flex 1 0 100%
       order 2
       img
-        width 100%
+        max-width 100%
     &__seat.is-ref
       order 1
 
