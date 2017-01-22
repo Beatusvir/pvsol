@@ -1150,7 +1150,7 @@ module.exports = __webpack_require__.p + "slide1.jpg?1506012fb9f09e414ddc0f98d8a
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "slide2.jpg?218cc1a2cbfca5a87b427d284204bab4";
+module.exports = __webpack_require__.p + "slide2.jpg?db8a699b646053b3ef1bb4a9a96cbd5d";
 
 /***/ }),
 /* 22 */
